@@ -3,11 +3,9 @@ addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
 });
 
-const dockerHub = "https://registry-1.docker.io";
-
 const routes = {
   // production
-  "docker.etux.top": dockerHub,
+  "docker.etux.top": "https://registry-1.docker.io",
   "quay.etux.top": "https://quay.io",
   "gcr.etux.top": "https://gcr.io",
   "k8s-gcr.etux.top": "https://k8s.gcr.io",
@@ -17,7 +15,7 @@ const routes = {
   // "ecr.etux.top": "https://public.ecr.aws",
 
   // staging
-  // "docker-staging.etux.top": dockerHub,
+  // "docker-staging.etux.top": "https://registry-1.docker.io",
 };
 
 function routeByHosts(host) {
@@ -43,7 +41,7 @@ async function handleRequest(request) {
       }
     );
   }
-  const isDockerHub = upstream == dockerHub;
+  const isDockerHub = upstream == "https://registry-1.docker.io";
   const authorization = request.headers.get("Authorization");
   if (url.pathname == "/v2/") {
     const newUrl = new URL(upstream + "/v2/");
