@@ -1,14 +1,3 @@
-// import DOCS from './index.html'
-
-// if (url.pathname === "/") {
-//   return new Response(DOCS, {
-//     status: 200,
-//     Headers: {
-//       "Content-Type": "text/html"
-//     }
-//   });
-// }
-
 addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
