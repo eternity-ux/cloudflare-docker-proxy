@@ -1,4 +1,4 @@
-import DOCS from '../index.html'
+import DOCS from './index.html'
 
 if (url.pathname === "/") {
   return new Response(DOCS, {
@@ -28,7 +28,7 @@ const routes = {
   // "ecr.etux.top": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.etux.top": dockerHub,
+  // "docker-staging.etux.top": dockerHub,
 };
 
 function routeByHosts(host) {
