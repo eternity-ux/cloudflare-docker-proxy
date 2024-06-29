@@ -14,7 +14,7 @@ const routes = {
   "k8s.etux.top": "https://registry.k8s.io",
   "ghcr.etux.top": "https://ghcr.io",
   "cloudsmith.etux.top": "https://docker.cloudsmith.io",
-  "ecr.etux.top": "https://public.ecr.aws",
+  // "ecr.etux.top": "https://public.ecr.aws",
 
   // staging
   "docker-staging.etux.top": dockerHub,
