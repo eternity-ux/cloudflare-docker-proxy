@@ -5,17 +5,17 @@ addEventListener("fetch", (event) => {
 
 const routes = {
   // production
-  "docker.etux.top": "https://registry-1.docker.io",
-  "quay.etux.top": "https://quay.io",
-  "gcr.etux.top": "https://gcr.io",
-  "k8s-gcr.etux.top": "https://k8s.gcr.io",
-  "k8s.etux.top": "https://registry.k8s.io",
-  "ghcr.etux.top": "https://ghcr.io",
-  // "cloudsmith.etux.top": "https://docker.cloudsmith.io",
-  // "ecr.etux.top": "https://public.ecr.aws",
+  "docker.etux.xyz": "https://registry-1.docker.io",
+  "quay.etux.xyz": "https://quay.io",
+  "gcr.etux.xyz": "https://gcr.io",
+  "k8s-gcr.etux.xyz": "https://k8s.gcr.io",
+  "k8s.etux.xyz": "https://registry.k8s.io",
+  "ghcr.etux.xyz": "https://ghcr.io",
+  // "cloudsmith.etux.xyz": "https://docker.cloudsmith.io",
+  // "ecr.etux.xyz": "https://public.ecr.aws",
 
   // staging
-  // "docker-staging.etux.top": "https://registry-1.docker.io",
+  // "docker-staging.etux.xyz": "https://registry-1.docker.io",
 };
 
 function routeByHosts(host) {
