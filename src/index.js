@@ -9,7 +9,7 @@ const routes = {
   "quay.etux.xyz": "https://quay.io",
   "gcr.etux.xyz": "https://gcr.io",
   "k8s-gcr.etux.xyz": "https://k8s.gcr.io",
-  "k8s.etux.xyz": "https://registry.k8s.io",
+  // "k8s.etux.xyz": "https://registry.k8s.io",
   "ghcr.etux.xyz": "https://ghcr.io",
   // "cloudsmith.etux.xyz": "https://docker.cloudsmith.io",
   // "ecr.etux.xyz": "https://public.ecr.aws",

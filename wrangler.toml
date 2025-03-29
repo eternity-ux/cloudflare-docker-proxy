@@ -17,7 +17,7 @@ routes = [
   { pattern = "quay.etux.xyz", custom_domain = true },
   { pattern = "gcr.etux.xyz", custom_domain = true },
   { pattern = "k8s-gcr.etux.xyz", custom_domain = true },
-  { pattern = "k8s.etux.xyz", custom_domain = true },
+#  { pattern = "k8s.etux.xyz", custom_domain = true },
   { pattern = "ghcr.etux.xyz", custom_domain = true },
 #  { pattern = "cloudsmith.etux.xyz", custom_domain = true },
 ]
